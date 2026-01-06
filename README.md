@@ -57,3 +57,26 @@ Como arquitetura para o projeto, a equipe da GrowDev decidiu usar MVC para o bac
 └──────────────────────────────┘
 ```
 
+---
+
+### ▶️ Como rodar o projeto
+
+⚠️ Este projeto ainda está em fase inicial de estruturação.
+
+As instruções completas para execução local (frontend, backend, banco de dados e Docker) serão adicionadas após a definição da estrutura de pastas e do setup inicial do projeto.
+
+Por enquanto:
+- O repositório está sendo preparado
+- As primeiras issues tratam da inicialização do projeto
+
+---
+
+### 🤝 Como contribuir
+
+Este projeto é desenvolvido de forma colaborativa pela GrowDev.
+Para mais detalhes sobre como pegar sua primeira Issue ou sobre o fluxo de trabalho acesse os seguintes links:
+
+- [Fluxo Oficial de Trabalho](https://github.com/GrowDev-Org/.github/blob/main/FLUXO-DE-TRABALHO.md#-fluxo-oficial-de-trabalho--growdev)
+- [Como Pegar a Primeira Issue](https://github.com/GrowDev-Org/.github/blob/main/PRIMEIRA-ISSUE.md)
+
+
