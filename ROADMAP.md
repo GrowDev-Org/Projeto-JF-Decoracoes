@@ -26,7 +26,9 @@ Se isso funcionar bem, o MVP está completo.
 **Objetivo**: Deixar o backend rodando e pronto para receber os códigos futuros.
 
 **Issue 1.1** - Inicializar o projeto backend
+
 **Tipo**: Task
+
 **Descrição**:
 - Criar pasta backend/
 - Inicializar projeto Node com TypeScript
