@@ -36,7 +36,9 @@ Se isso funcionar bem, o MVP está completo.
 - Configurar scripts básicos
 
 **Issue 1.2** - Configurar Express
+
 **Tipo**: Task
+
 **Descrição**:
 - Instalar Express
 - Criar app.ts
@@ -44,7 +46,9 @@ Se isso funcionar bem, o MVP está completo.
 - Criar rota de teste (GET /health)
 
 **Issue 1.3** - Configurar a arquitetura MVC
+
 **Tipo**: Task
+
 **Descrição**:
 - Criar estrutura de pastas:
   - Pasta controllers/
@@ -58,14 +62,18 @@ Se isso funcionar bem, o MVP está completo.
 **Objetivo**: Configurar a conexão para permitir persistência de dados
 
 **Issue 2.1** - Configurar conexão com PostgreSQL
+
 **Tipo**: Task
+
 **Descrição**:
 - Escolher ORM para conexão (ex: Prisma/Sequelize...)
 - Criar pasta e arquivo para conexão (ex: db/connection.ts)
 - Testar conexão
 
 **Issue 2.2** - Modelagem Incial do Banco
+
 **Tipo**: Task
+
 **Descrição**:
 - Definir entidades principais:
   - Produto
@@ -80,21 +88,27 @@ Se isso funcionar bem, o MVP está completo.
 **Objetivo**: Criar a base das regras do negócio.
 
 **Issue 3.1**: - Criar Model do Produto
+
 **Tipo**: Feature
+
 **Descrição**:
 - Criar entidade Produto
 - Atributos básicos (nome, quantidade, descrição...)
 - Criar o CRUD básico no Model
 
 **Issue 3.2**: - Criar Model de Evento
+
 **Tipo**: Feature
+
 **Descrição**:
 - Criar entidade Evento
 - Atributos básicos (nome, data, cliente...)
 - Criar o CRUD básico no Model
 
 **Issue 3.3**: - Criar Model de Aluguel
+
 **Tipo**: Feature
+
 **Descrição**:
 - Relacionar Produtos a Eventos
 - Controlar quantidade alugada
@@ -106,7 +120,9 @@ Se isso funcionar bem, o MVP está completo.
 **Objetivo**: expor a API para o frontend.
 
 **Issue 4.1** — Criar rotas de Produto
+
 **Tipo**: Feature
+
 **Endpoints**:
 
 - POST /products
@@ -115,7 +131,9 @@ Se isso funcionar bem, o MVP está completo.
 - DELETE /products/:id
 
 **Issue 4.2** — Criar rotas de Evento
+
 **Tipo**: Feature
+
 **Endpoints**:
 
 - POST /events
@@ -124,7 +142,9 @@ Se isso funcionar bem, o MVP está completo.
 - DELETE /events/:id
 
 **Issue 4.3** — Criar rotas de Aluguel
+
 **Tipo**: Feature
+
 **Endpoints**:
 - POST /rentals
 - GET /rentals
@@ -135,7 +155,9 @@ Se isso funcionar bem, o MVP está completo.
 5️⃣ Fase 5 — Regras de Negócio
 
 **Objetivo**: evitar erros no uso do sistema.
+
 **Issue 5.1** — Validação de dados
+
 **Tipo**: Feature
 **Descrição**:
 - Validar campos obrigatórios
@@ -143,7 +165,9 @@ Se isso funcionar bem, o MVP está completo.
 - Retornar erros padronizados
 
 **Issue 5.2** — Controle de estoque
+
 **Tipo**: Feature
+
 **Descrição**:
 - Não permitir aluguel acima do estoque
 - Atualizar estoque corretamente
@@ -153,20 +177,27 @@ Se isso funcionar bem, o MVP está completo.
 6️⃣ Fase 6 — Qualidade e Infra
 
 **Objetivo**: preparar o backend para crescer.
+
 **Issue 6.1** — Configurar Docker
+
 **Tipo**: Task
+
 **Descrição**:
 - Criar Dockerfile
 - Criar docker-compose com PostgreSQL
 
 **Issue 6.2** — Configurar testes (Vitest)
+
 **Tipo**: Task
+
 **Descrição**:
 - Testes unitários de Models
 - Testes básicos de Controllers
 
 **Issue 6.3** — Padronizar respostas e erros
-Tipo: Task
+
+**Tipo**: Task
+
 **Descrição**:
 - Criar padrão de resposta JSON
 - Criar middleware de erro
