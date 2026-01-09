@@ -35,7 +35,18 @@ Se isso funcionar bem, o MVP está completo.
 - Configurar tsconfig.json
 - Configurar scripts básicos
 
-**Issue 1.2** - Configurar Express
+**Issue 1.2** - Configurar ambiente com Docker (PostgreSQL)
+
+**Tipo**: Task
+
+**Descrição**:
+- Criar arquivo docker-compose.yml
+- Configurar serviço postgres
+- Definir usuário, senha e banco via .env
+- Expor porta do PostgreSQL
+- Garantir que o container sobe corretamente
+
+**Issue 1.3** - Configurar Express
 
 **Tipo**: Task
 
@@ -45,7 +56,7 @@ Se isso funcionar bem, o MVP está completo.
 - Criar servidor HTTP
 - Criar rota de teste (GET /health)
 
-**Issue 1.3** - Configurar a arquitetura MVC
+**Issue 1.4** - Configurar a arquitetura MVC
 
 **Tipo**: Task
 
