@@ -1,0 +1,13 @@
+import express from "express";
+import healthRoutes from "./routes/health.route";
+
+const app = express();
+
+app.use(express.json());
+app.use(healthRoutes);
+
+const PORT = 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
