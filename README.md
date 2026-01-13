@@ -79,4 +79,8 @@ Para mais detalhes sobre como pegar sua primeira Issue ou sobre o fluxo de traba
 - [Fluxo Oficial de Trabalho](https://github.com/GrowDev-Org/.github/blob/main/FLUXO-DE-TRABALHO.md#-fluxo-oficial-de-trabalho--growdev)
 - [Como Pegar a Primeira Issue](https://github.com/GrowDev-Org/.github/blob/main/PRIMEIRA-ISSUE.md)
 
+---
 
+### ⚠️ Vulnerabilidades 
+
+- 1°: Vulnerabilidade conhecida em dependência de desenvolvimento do Prisma (hono). Não afeta runtime da aplicação, será tratada antes do deploy(issue 2.1 do backend).
