@@ -83,4 +83,25 @@ Para mais detalhes sobre como pegar sua primeira Issue ou sobre o fluxo de traba
 
 ### ⚠️ Vulnerabilidades 
 
-- 1°: Vulnerabilidade conhecida em dependência de desenvolvimento do Prisma (hono). Não afeta runtime da aplicação, será tratada antes do deploy(issue 2.1 do backend).
+- 1° Vulnerabilidade conhecida em dependência de desenvolvimento do Prisma (hono). Não afeta runtime da aplicação, será tratada antes do deploy(issue 2.1 do backend).
+
+---
+
+### ❗ Prisma Client
+
+Este projeto utiliza o Prisma na versão nova com `prisma.config.ts`.
+
+O client é gerado em: `src/generated/prisma`
+
+Após clonar o projeto:
+
+```bash
+npm install
+docker compose up -d
+npx prisma generate
+npm run dev
+```
+
+Por isso, utilize sempre:
+```ts
+import { PrismaClient } from "../../generated/prisma";
