@@ -61,13 +61,52 @@ Como arquitetura para o projeto, a equipe da GrowDev decidiu usar MVC para o bac
 
 ### ▶️ Como rodar o projeto
 
-⚠️ Este projeto ainda está em fase inicial de estruturação.
+🧠 Como rodar o Backend
 
-As instruções completas para execução local (frontend, backend, banco de dados e Docker) serão adicionadas após a definição da estrutura de pastas e do setup inicial do projeto.
+Esta seção descreve como configurar e executar o **backend do projeto** localmente até a fase atual do desenvolvimento.
 
-Por enquanto:
-- O repositório está sendo preparado
-- As primeiras issues tratam da inicialização do projeto
+### 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado na sua máquina:
+
+- **Node.js** (versão LTS recomendada)
+- **NPM** (vem junto com o Node)
+- **Docker** e **Docker Compose**
+
+> ⚠️ O Docker é obrigatório para subir o banco de dados PostgreSQL localmente.
+
+📁 Acessando o backend
+
+A partir da raiz do repositório, entre na pasta do backend:
+
+```bash
+cd backend
+```
+
+Instale as dependências usando o comando:
+```bash
+npm install
+```
+
+Após isso, nas pasta `backend/` crie um arquivo `.env` baseado no `.env.example` com o comando:
+```bash
+cp .env.example .env
+```
+
+Agora é hora de subir o banco de dados com o docker, na pasta `backend/` execute:
+```bash
+docker compose up -d
+```
+
+Como penúltima etepa, você precisa gerar o Prisma Client, execute:
+```bash
+npx prisma generate
+```
+
+E para finalizar, agora é rodar o servidor usando o comando:
+```bash
+npm run dev
+```
 
 ---
 
@@ -91,7 +130,9 @@ Para mais detalhes sobre como pegar sua primeira Issue ou sobre o fluxo de traba
 
 Este projeto utiliza o Prisma na versão nova com `prisma.config.ts`.
 
-O client é gerado em: `src/generated/prisma`
+O client é gerado em: `src/generated/prisma`.
+
+Vale ressaltar que, cada integrante deve ter o Docker instalado em sua máquina para o comando `docker compose up -d` funcionar.
 
 Após clonar o projeto:
 
